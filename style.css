@@ -1,0 +1,20 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{display: flex;justify-content: center;align-items: center;height: 100vh;background-color: rgb(46, 72, 72);}
+.content{display: flex;flex-direction: row;;gap: 50px;}
+.card >img{width: 300px;height: 400px;filter: brightness(70%)}
+.card { box-shadow: 10px 10px 20px rgb(15, 15, 15);}
+.card{display: flex;align-items: center;justify-content: center;flex-direction: column;;}
+.card >h1{position: absolute;color: aliceblue;visibility: hidden;}
+.card>p{position: absolute;width: 200px;margin-top: 150px;color: aliceblue;visibility: hidden;}
+.card >img:hover{filter: blur(10px);}
+.card:hover > h1 {
+    visibility: visible;
+  }
+  .card:hover > p {
+    visibility: visible;
+  }
+@media (width <750px){
+
+    .content{display: flex;flex-direction: column;margin-top: 800px;}
+}
+
